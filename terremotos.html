@@ -1,10 +1,5 @@
 <html>
-<<<<<<< HEAD
     <head>
-=======
-
-<head>
->>>>>>> 3b99c36a163565048a903f342b397eebd3be24ab
     <meta charset='utf-8' />
     <title>Terremotos</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
@@ -13,10 +8,6 @@
     <link href='css/estilobase.css' rel='stylesheet' />
     <script src='js/utils.js'></script>
     <script src='js/terremotos.js'></script>
-<<<<<<< HEAD
-
-=======
->>>>>>> 3b99c36a163565048a903f342b397eebd3be24ab
     <script>
         var map;
         function init() {
@@ -34,19 +25,13 @@
             map.addControl(new mapboxgl.AttributionControl({
                 compact: true
             }));
-<<<<<<< HEAD
             map.addControl(new mapboxgl.NavigationControl());         
             
-=======
-            map.addControl(new mapboxgl.NavigationControl());
-
->>>>>>> 3b99c36a163565048a903f342b397eebd3be24ab
             map.on("load", function () {
 
                 generarPeticionTerremotos();
                 addPopupToMap("terremotos");
 
-<<<<<<< HEAD
                 }); // fin load mapa
 
                 map.on("zoomend", function () {
@@ -58,24 +43,10 @@
 
                 generarPeticionTerremotos();
                 });
-=======
-            }); // fin load mapa
-
-            map.on("zoomend", function () {
-
-                generarPeticionTerremotos();
-            });
-
-            map.on("moveend", function () {
-
-                generarPeticionTerremotos();
-            });
->>>>>>> 3b99c36a163565048a903f342b397eebd3be24ab
 
         } //fin init
 
     </script>
-<<<<<<< HEAD
     </head>
 
     <body onload="init()">
@@ -83,12 +54,3 @@
     </body>
 
     </html>
-=======
-</head>
-
-<body onload="init()">
-    <div id='map'></div>
-</body>
-
-</html>
->>>>>>> 3b99c36a163565048a903f342b397eebd3be24ab
