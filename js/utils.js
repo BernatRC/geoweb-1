@@ -46,5 +46,4 @@ function addPopupToMap(nombreCapa) {
       map.getCanvas().style.cursor = '';
       popup.remove();
     });
-
   }// fin funcion
